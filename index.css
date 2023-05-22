@@ -1,0 +1,77 @@
+html {
+  background: rgb(30, 30, 30);
+}
+div {
+  display: flex;
+}
+
+div:first-child {
+  color: white;
+  width: 30px;
+  font-size: 120%;
+  margin: 20px 30px 5px 5px;
+  padding: 8px;
+}
+
+div img {
+  width: 130px;
+  height: auto;
+  margin-bottom: 50px;
+}
+
+.input-icon input {
+  /*padding-left: 40px;*/
+  background: black;
+  border-top-left-radius: 24px;
+  border-bottom-left-radius: 24px;
+  margin: 20px 0px 2px 270px;
+  width: 720px;
+  height: 45px;
+}
+
+.input-icon i {
+  margin: 33px 0px 0px 960px;
+  font-size: 25px;
+}
+
+.search-bttn button {
+  background: black;
+  width: 90px;
+  height: 50px;
+  color: white;
+  margin: 20px 0px 40px 0px;
+  font-size: 100%;
+  border-top-right-radius: 24px;
+  border-bottom-right-radius: 24px;
+}
+
+.mic button {
+  color: white;
+  background: black;
+  font-size: 22px;
+  padding: 4px 10px 10px 10px;
+  margin: 24px 0px 0px 10px;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.stream i {
+  color: white;
+  padding: 30px 0px 0px 208px;
+  font-size: 34px;
+}
+
+.notification i {
+  color: white;
+  padding: 30px 0px 0px 40px;
+  font-size: 34px;
+}
+
+.avatar img {
+  margin: 18px;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
