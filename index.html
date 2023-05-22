@@ -15,60 +15,70 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <script src="js/bootstrap.js"></script>
   </head>
-  <style>
-    .input-icon i {
-      position: absolute;
-    }
-  </style>
 
   <body>
-    <div class="navbar">
-      <div class="fabar">
-        <i class="fa-solid fa-bars"></i>
-      </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-      <div class="iconyoutube">
-        <img
-          src="https://itcenter.vn/wp-content/uploads/2022/11/YouTube-logo-black-background.png"
-        />
-      </div>
-
-      <div class="input-icon">
-        <form>
-          <i class="fa-solid fa-keyboard"></i>
-          <input type="text" style="font-size: large" placeholder="Search" />
-        </form>
-      </div>
-
-      <div class="search-bttn">
-        <form>
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#"
+              >Home <span class="sr-only">(current)</span></a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input
+            class="form-control mr-sm-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+            Search
           </button>
         </form>
       </div>
-
-      <div class="mic">
-        <form>
-          <button type="mic"><i class="fa-solid fa-microphone"></i></button>
-        </form>
-      </div>
-
-      <div class="stream">
-        <i class="fa-solid fa-video"></i>
-      </div>
-
-      <div class="notification">
-        <i class="fa-solid fa-bell"></i>
-      </div>
-
-      <div class="avatar">
-        <img
-          src="https://th.bing.com/th/id/OIP.kVeQmPFODQ_l5A7wItKQrQAAAA?pid=ImgDet&rs=1"
-        />
-      </div>
-    </div>
+    </nav>
   </body>
 </html>
