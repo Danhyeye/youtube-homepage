@@ -2,20 +2,8 @@ html {
   background-color: #0f0f0f;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  background-color: #0f0f0f;
-}
-
 img {
   width: 100px;
-}
-
-.group-navbar {
-  display: flex;
-  align-items: center;
-  padding: 15px;
 }
 
 i {
@@ -23,8 +11,16 @@ i {
   padding: 0;
 }
 
-.fa-bars {
-  margin-right: 25px;
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f0f0f;
+}
+
+.group-navbar {
+  display: flex;
+  align-items: center;
+  padding: 15px;
 }
 
 .search {
@@ -38,7 +34,11 @@ i {
   border: solid 1px;
 }
 
-.bttn-search {
+.search:focus {
+  border-width: solid blue 2px;
+}
+
+.btn-search {
   width: 80px;
   height: 50.4px;
   font-size: 40px;
@@ -47,12 +47,13 @@ i {
   border-color: #0f0f0f;
   color: white;
   border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .fa-magnifying-glass {
   font-size: 25px;
-  padding: 0 5px 10px 0;
-  margin: 10px 0 0 0;
 }
 
 .fa-video {
@@ -63,6 +64,10 @@ i {
 .fa-bell {
   font-size: 20px;
   padding-right: 20px;
+}
+
+.fa-bars {
+  margin-right: 25px;
 }
 
 .avatar {
@@ -77,6 +82,7 @@ i {
   display: block;
   /* overflow: scroll; */
 }
+
 .home {
   list-style-type: none;
   color: whitesmoke;
