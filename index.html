@@ -3,11 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Youtube</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="all" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,70 +10,55 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <script src="js/bootstrap.js"></script>
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <link rel="stylesheet" href="index.css" />
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#">Navbar</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#"
-              >Home <span class="sr-only">(current)</span></a
-            >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form>
+    <!--------------------------NAVBAR------------------------->
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="group-navbar">
+        <div>
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <div>
+          <img class="ytb-icon" src="img/youtube-icon.png" />
+        </div>
       </div>
+      <!-- SEARCH -->
+      <div class="group-navbar">
+        <input class="search" type="text" placeholder="Search" />
+        <button class="bttn-search" type="button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+
+      <!-- INFO  -->
+      <div class="group-navbar">
+        <i class="fa-solid fa-video"></i>
+        <i class="fa-regular fa-bell"></i>
+        <img class="avatar" src="img/aCatsuki.jfif" />
+      </div>
+    </nav>
+    <!-------------------VERTICALNAVIGATIONBAR------------------------->
+    <!-- HOME -->
+    <nav class="verbar">
+      <ul class="home">
+        <li><i class="fa-solid fa-house"></i>Home</li>
+        <li><i class="fa-solid fa-bolt"></i>Short</li>
+        <li><i class="fa-brands fa-square-youtube"></i>Subscribe</li>
+      </ul>
+      <!-- VIDEO -->
+      <ul class="video">
+        <li><i class="fa-regular fa-square-caret-right"></i>Library</li>
+        <li><i class="fa-solid fa-clock-rotate-left"></i>Videos Watched</li>
+        <li><i class="fa-regular fa-square-caret-right"></i>My Video</li>
+        <li><i class="fa-regular fa-clock"></i>Later</li>
+        <li><i class="fa-regular fa-thumbs-up"></i>Liked</li>
+      </ul>
+      <!-- CHANNEL SUBSCRIBE -->
     </nav>
   </body>
 </html>
