@@ -1,5 +1,7 @@
-html {
+/* Tags */
+body {
   background-color: #0f0f0f;
+  color: white;
 }
 
 img {
@@ -7,20 +9,26 @@ img {
 }
 
 i {
-  color: white;
   padding: 0;
+  width: 20px;
 }
 
+/* Navbar */
 .navbar {
+  width: 100%;
+  height: 80px;
   display: flex;
   justify-content: space-between;
   background-color: #0f0f0f;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .group-navbar {
   display: flex;
   align-items: center;
-  padding: 15px;
+  margin-left: 20px;
 }
 
 .search {
@@ -52,6 +60,55 @@ i {
   align-items: center;
 }
 
+.avatar {
+  width: 40px;
+  height: 60px;
+  clip-path: circle(20px at 50% 50%);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 210px;
+  height: 100%;
+  position: fixed;
+  overflow-x: hidden;
+  top: 80px;
+  left: 0;
+}
+
+.items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 0 12px 0 12px;
+  padding: 8px 12px 8px 12px;
+}
+
+.item:hover {
+  background-color: #272727;
+  border-radius: 8px;
+}
+
+.item-icon {
+  margin-right: 22px;
+  width: 20px;
+}
+
+.item-text {
+  margin: 0;
+}
+
+.divider {
+  border: solid 0.5px gray;
+  margin: 12px 15px 12px 15px;
+}
+
+/* Icons */
+
 .fa-magnifying-glass {
   font-size: 25px;
 }
@@ -68,55 +125,4 @@ i {
 
 .fa-bars {
   margin-right: 25px;
-}
-
-.avatar {
-  width: 40px;
-  height: 60px;
-  clip-path: circle(20px at 50% 50%);
-}
-
-/********************************************************************/
-
-.verbar {
-  display: block;
-  /* overflow: scroll; */
-}
-
-.home {
-  list-style-type: none;
-  color: whitesmoke;
-  margin: 0;
-  padding: 0;
-  /* position: fixed;    */
-  height: 100px;
-  overflow: auto;
-  padding-bottom: 10px;
-  background-color: #0f0f0f;
-}
-
-.home i {
-  color: whitesmoke;
-}
-
-.video {
-  list-style-type: none;
-  color: whitesmoke;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  height: 185px;
-  overflow: auto;
-}
-
-.video i {
-  font-size: 20px;
-  color: whitesmoke;
-}
-
-li i {
-  display: block;
-  color: #f7f2f2;
-  padding: 8px 16px;
-  text-decoration: none;
 }
