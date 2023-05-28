@@ -62,6 +62,7 @@ i {
 }
 
 .avatar {
+  margin-right: 20px;
   width: 40px;
   height: 60px;
   clip-path: circle(20px at 50% 50%);
@@ -116,7 +117,7 @@ i {
 
 .fa-video {
   font-size: 20px;
-  padding-right: 20px;
+  padding-right: 23px;
 }
 
 .fa-bell {
@@ -126,4 +127,20 @@ i {
 
 .fa-bars {
   margin-right: 25px;
+}
+
+.fa-youtube {
+  font-size: 18px;
+}
+
+p {
+  margin-left: 19px;
+}
+
+.avatar-sub {
+  width: 40px;
+  height: 60px;
+  clip-path: circle(12px at 50% 50%);
+  padding-right: 0px;
+  font-size: 50px;
 }
