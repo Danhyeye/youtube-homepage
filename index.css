@@ -90,7 +90,7 @@ i {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #555;
+  background: #0f0f0f;
   /* transition-property: visibility; */
   border-radius: 8px;
 }
@@ -120,7 +120,7 @@ i {
 .item-icon {
   margin-right: 22px;
   width: 24px;
-  height: 17px;
+  height: 15.5px;
 }
 
 .item-text {
@@ -204,3 +204,118 @@ a {
   font-size: 12px;
   color: #958e8e;
 }
+/* SCROLL-CONTAINER */
+/* .scroll-container{
+  display: flex;
+  margin: 8px 0px 0px 20px;
+  width: 60px;
+  height: 40px;
+  position: fixed;
+  overflow-x: hidden;
+  top: 80px;
+  left: 0;
+  align-items: center;
+
+}
+
+.scroll-container:hover{
+  text-align: center;
+  background-color: #272727;
+  border-radius: 8px;
+}
+ */
+
+.main {
+  margin-top: 80px;
+  margin-left: 242px;
+  padding-left: 0;
+}
+
+.main ul {
+  background-color: #c90505;
+}
+
+.main li {
+  list-style-type: none;
+  float: left;
+}
+
+.main a {
+  overflow-x: visible;
+
+  display: block;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  /* padding: 14px 16px; */
+  text-decoration: none;
+  /* width:500px; */
+}
+
+.main a:hover:not(.all) {
+  background-color: #9fe82b;
+}
+
+.all {
+  background-color: brown;
+}
+/* 
+.all {
+  margin-left: 30px;
+  padding-top: 4px;
+  width: 50px;
+  height: 25px;
+} 
+
+.game {
+  padding-top: 4px;
+  width: 90px;
+  height: 25px;
+}
+
+.live {
+  padding-top: 4px;
+  width: 70px;
+  height: 25px;
+}
+
+.music {
+  padding-top: 4px;
+  width: 90px;
+  height: 25px;
+}
+
+.cartoon {
+  padding-top: 4px;
+  width: 111px;
+  height: 25px;
+}
+
+.upload {
+  padding-top: 4px;
+  width: 110px;
+  height: 25px;
+}
+
+.proposal {
+  padding-top: 4px;
+  width: 140px;
+  height: 25px;
+}
+
+.sports-video-games {
+  padding-top: 4px;
+  width: 180px;
+  height: 25px;
+}
+
+.handmade {
+  padding-top: 4px;
+  width: 95px;
+  height: 25px;
+}
+
+.list {
+  padding-top: 4px;
+  width: 50px;
+  height: 25px;
+}  */
