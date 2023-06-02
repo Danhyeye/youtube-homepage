@@ -1,77 +1,206 @@
-html {
-  background: rgb(30, 30, 30);
-}
-div {
-  display: flex;
-}
-
-div:first-child {
+/* Tags */
+body {
+  background-color: #0f0f0f;
   color: white;
-  width: 30px;
-  font-size: 120%;
-  margin: 20px 30px 5px 5px;
-  padding: 8px;
+  font-family: "Roboto", sans-serif;
 }
 
-div img {
-  width: 130px;
-  height: auto;
-  margin-bottom: 50px;
+img {
+  width: 100px;
 }
 
-.input-icon input {
-  /*padding-left: 40px;*/
-  background: black;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
-  margin: 20px 0px 2px 270px;
-  width: 720px;
-  height: 45px;
+i {
+  padding: 0;
+  width: 20px;
 }
 
-.input-icon i {
-  margin: 33px 0px 0px 960px;
+/* Navbar */
+.navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #0f0f0f;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.group-navbar {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+
+.search {
+  font-size: 16px;
+  width: 500px;
+  border-radius: 50px 0 0 50px;
+  padding: 15px 15px 15px 25px;
+  color: white;
+  background-color: #0f0f0f;
+  border-color: #0f0f0f;
+  border: solid 1px;
+}
+
+.search:focus {
+  border-width: solid blue 2px;
+}
+
+.btn-search {
+  width: 80px;
+  height: 50.4px;
+  font-size: 40px;
+  background-color: #0f0f0f;
+  border-radius: 0 50px 50px 0;
+  border-color: #0f0f0f;
+  color: white;
+  border: solid 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar {
+  margin-right: 20px;
+  width: 40px;
+  height: 60px;
+  clip-path: circle(20px at 50% 50%);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  height: calc(100% - 80px);
+  position: fixed;
+  overflow-x: hidden;
+  top: 80px;
+  left: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #0f0f0f;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555;
+  /* transition-property: visibility; */
+  border-radius: 8px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.items {
+  list-style-type: none;
+  padding: 0;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin: 0 12px 0 12px;
+  padding: 8px 12px 8px 12px;
+}
+
+.item:hover {
+  background-color: #272727;
+  border-radius: 8px;
+}
+
+.item-icon {
+  margin-right: 22px;
+  width: 24px;
+  height: 17px;
+}
+
+.item-text {
+  margin: 0;
+}
+
+.divider {
+  border: solid 0.5px gray;
+  margin: 12px 15px 12px 15px;
+}
+
+/* Icons */
+
+.fa-magnifying-glass {
   font-size: 25px;
 }
 
-.search-bttn button {
-  background: black;
-  width: 90px;
-  height: 50px;
-  color: white;
-  margin: 20px 0px 40px 0px;
-  font-size: 100%;
-  border-top-right-radius: 24px;
-  border-bottom-right-radius: 24px;
+.fa-video {
+  font-size: 20px;
+  padding-right: 23px;
 }
 
-.mic button {
-  color: white;
-  background: black;
-  font-size: 22px;
-  padding: 4px 10px 10px 10px;
-  margin: 24px 0px 0px 10px;
-  border-top-left-radius: 100px;
-  border-bottom-left-radius: 100px;
-  border-top-right-radius: 100px;
-  border-bottom-right-radius: 100px;
+.fa-bell {
+  font-size: 20px;
+  padding-right: 20px;
 }
 
-.stream i {
-  color: white;
-  padding: 30px 0px 0px 208px;
-  font-size: 34px;
+.fa-bars {
+  margin-right: 25px;
 }
 
-.notification i {
-  color: white;
-  padding: 30px 0px 0px 40px;
-  font-size: 34px;
+.fa-youtube {
+  font-size: 18px;
 }
 
-.avatar img {
-  margin: 18px;
+p {
+  margin-left: 19px;
+}
+
+.avatar-sub {
+  height: 24px;
+  width: 24px;
+  margin-right: 22px;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  /* padding: 8px 12px 8px 12px; */
+}
+
+.fa-youtube {
+  color: #ff0000;
+}
+
+a {
+  color: #c3c3c3;
+}
+
+.guide-link-primary {
+  font-size: 13px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  padding-left: 12px;
+}
+
+.guide-link-primary a {
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.guide-link-secondary {
+  font-size: 13px;
+  margin-bottom: 20px;
+  margin-left: 12px;
+  padding-left: 12px;
+}
+
+.guide-link-secondary a {
+  text-decoration: none;
+  margin-right: 8px;
+}
+
+.copy-right {
+  font-size: 12px;
+  color: #958e8e;
 }

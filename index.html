@@ -3,11 +3,6 @@
   <head>
     <meta charset="utf-8" />
     <title>Youtube</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="robots" content="all" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -15,64 +10,201 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <!-- <link rel="stylesheet" href="css/bootstrap.css" /> -->
+    <!-- <script src="js/bootstrap.js"></script> -->
+    <link rel="icon" href="img/youtube-header-icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="index.css" />
   </head>
-  <style>
-    .input-icon i {
-      position: absolute;
-    }
-  </style>
 
   <body>
-    <div class="navbar">
-      <div class="fabar">
+    <!--------------------------NAVBAR------------------------->
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="group-navbar">
         <i class="fa-solid fa-bars"></i>
+        <img class="ytb-icon" src="img/youtube-icon.png" />
+      </div>
+      <!-- SEARCH -->
+      <div class="group-navbar">
+        <input class="search" type="text" placeholder="Search" />
+        <button class="btn-search" type="button">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
       </div>
 
-      <div class="iconyoutube">
-        <img
-          src="https://itcenter.vn/wp-content/uploads/2022/11/YouTube-logo-black-background.png"
-        />
-      </div>
-
-      <div class="input-icon">
-        <form>
-          <i class="fa-solid fa-keyboard"></i>
-          <input
-            type="text"
-            style="font-size: large"
-            placeholder="   Ssdasdasdearch"
-          />
-        </form>
-      </div>
-
-      <div class="search-bttn">
-        <form>
-          <button type="submit">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </button>
-        </form>
-      </div>
-
-      <div class="mic">
-        <form>
-          <button type="mic"><i class="fa-solid fa-microphone"></i></button>
-        </form>
-      </div>
-
-      <div class="stream">
+      <!-- INFO  -->
+      <div class="group-navbar">
         <i class="fa-solid fa-video"></i>
+        <i class="fa-regular fa-bell"></i>
+        <img class="avatar" src="img/aCatsuki.jfif" />
       </div>
+    </nav>
+    <!-------------------VERTICALNAVIGATIONBAR------------------------->
+    <!-- HOME -->
+    <nav class="sidebar">
+      <ul class="items">
+        <li class="item">
+          <i class="item-icon fa-solid fa-house"></i>
+          <p class="item-text">Home</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-bolt"></i>
+          <p class="item-text">Shorts</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-credit-card"></i>
+          <p class="item-text">Subcriptions</p>
+        </li>
+        <!---------------------------------------------------------->
+        <div class="divider"></div>
+        <li class="item">
+          <i class="item-icon fa-solid fa-square-caret-right"></i>
+          <p class="item-text">Library</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-clock-rotate-left"></i>
+          <p class="item-text">History</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-film"></i>
+          <p class="item-text">Your video</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-regular fa-clock"></i>
+          <p class="item-text">Watch Later</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-thumbs-up"></i>
+          <p class="item-text">Liked</p>
+        </li>
+        <div class="divider"></div>
+        <p>Subcriptions</p>
+        <li class="item">
+          <img class="avatar-sub" src="img/aCatsuki.jfif" />
+          <p class="item-text">Danhyeye</p>
+        </li>
+        <li class="item">
+          <img class="avatar-sub" src="img/aCatsuki.jfif" />
+          <p class="item-text">Danhyeye</p>
+        </li>
+        <li class="item">
+          <img class="avatar-sub" src="img/aCatsuki.jfif" />
+          <p class="item-text">Danhyeye</p>
+        </li>
+        <li class="item">
+          <img class="avatar-sub" src="img/aCatsuki.jfif" />
+          <p class="item-text">Danhyeye</p>
+        </li>
+        <li class="item">
+          <img class="avatar-sub" src="img/aCatsuki.jfif" />
+          <p class="item-text">Danhyeye</p>
+        </li>
+        <div class="divider"></div>
+        <p>Explore</p>
+        <li class="item">
+          <i class="item-icon fa-solid fa-fire"></i>
+          <p class="item-text">Trending</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-music"></i>
+          <p class="item-text">Music</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-gamepad"></i>
+          <p class="item-text">Game</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-fire"></i>
+          <p class="item-text">Trending</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-file-lines fa-flip-vertical"></i>
+          <p class="item-text">News</p>
+        </li>
 
-      <div class="notification">
-        <i class="fa-solid fa-bell"></i>
-      </div>
+        <li class="item">
+          <i class="item-icon fa-solid fa-trophy"></i>
+          <p class="item-text">Sport</p>
+        </li>
+        <div class="divider"></div>
+        <p>Other Services Of Youtube</p>
 
-      <div class="avatar">
-        <img
-          src="https://th.bing.com/th/id/OIP.kVeQmPFODQ_l5A7wItKQrQAAAA?pid=ImgDet&rs=1"
-        />
-      </div>
-    </div>
+        <li class="item">
+          <i class="item-icon fa-brands fa-youtube"></i>
+          <p class="item-text">Youtube Premium</p>
+        </li>
+
+        <li class="item">
+          <i class="item-icon fa-brands fa-youtube"></i>
+          <p class="item-text">Youtube Studio</p>
+        </li>
+
+        <li class="item">
+          <i class="item-icon fa-brands fa-youtube"></i>
+          <p class="item-text">Youtube Music</p>
+        </li>
+
+        <li class="item">
+          <i class="item-icon fa-brands fa-youtube"></i>
+          <p class="item-text">Youtube Kid</p>
+        </li>
+
+        <li class="item">
+          <i class="item-icon fa-brands fa-youtube"></i>
+          <p class="item-text">Youtube Premium</p>
+        </li>
+
+        <div class="divider"></div>
+
+        <li class="item">
+          <i class="item-icon fa-solid fa-gear"></i>
+          <p class="item-text">Setting</p>
+        </li>
+
+        <li class="item">
+          <i class="item-icon fa-solid fa-flag"></i>
+          <p class="item-text">Report</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-regular fa-circle-question"></i>
+          <p class="item-text">Help</p>
+        </li>
+        <li class="item">
+          <i class="item-icon fa-solid fa-triangle-exclamation"></i>
+          <p class="item-text">Feedback</p>
+        </li>
+
+        <div class="divider"></div>
+        <div class="guide-link-primary">
+          <a href="https://about.youtube/">About</a>
+          <a href="https://blog.youtube/">Press</a>
+          <a href="https://www.youtube.com/howyoutubeworks/policies/copyright/"
+            >Copyright</a
+          >
+          <a href="https://www.youtube.com/t/contact_us/">Contact us</a>
+          <a href="https://www.youtube.com/creators/">Creators</a>
+          <a href="https://www.youtube.com/ads/">Advertise</a>
+          <a href="https://developers.google.com/youtube?hl=vi">Devlopers</a>
+        </div>
+        <div class="guide-link-secondary">
+          <a href="https://www.youtube.com/t/terms">Terms</a>
+          <a href="https://policies.google.com/privacy?hl=vi">Privacy</a>
+          <a
+            href="https://www.youtube.com/howyoutubeworks/policies/community-guidelines/"
+            >Policy & Safety</a
+          >
+          <a
+            href="https://www.youtube.com/howyoutubeworks/?utm_campaign=ytgen&utm_source=ythp&utm_medium=LeftNav&utm_content=txt&u=https%3A%2F%2Fwww.youtube.com%2Fhowyoutubeworks%3Futm_source%3Dythp%26utm_medium%3DLeftNav%26utm_campaign%3Dytgen"
+            >How Youtebe works</a
+          >
+          <a href="https://www.youtube.com/new">Test new features</a>
+        </div>
+        <p class="copy-right">© 2023 Google LLC</p>
+      </ul>
+    </nav>
   </body>
 </html>
