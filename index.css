@@ -71,7 +71,7 @@ i {
 /* Sidebar */
 .sidebar {
   width: 250px;
-  height: 100%;
+  height: calc(100% - 80px);
   position: fixed;
   overflow-x: hidden;
   top: 80px;
