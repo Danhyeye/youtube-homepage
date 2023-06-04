@@ -233,3 +233,28 @@ a {
   background-color: #3f3f3f;
   border-radius: 8px;
 }
+<<<<<<< HEAD
+=======
+
+/* VIDEO */
+.video {
+  display: flex;
+  position: fixed;
+  top: 160px;
+  left: 250px;
+  padding: 0 20px 0 20px;
+}
+
+.video .video-content {
+  width: 355px;
+  height: 195px;
+  /* margin: 0 7px 0 7px; */
+  padding: 6px 7px 6px 7px;
+}
+
+.video .avatar {
+  /* margin-right: 0; */
+
+  /* margin-left: 25px; */
+}
+>>>>>>> 1a95ae7f20ad84c293666be5a9ccca16f8019883
