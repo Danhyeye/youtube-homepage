@@ -166,7 +166,6 @@ p {
   width: 24px;
   margin-right: 22px;
   border-radius: 50%;
-  /* padding: 8px 12px 8px 12px; */
 }
 
 .fa-youtube {
@@ -205,7 +204,7 @@ a {
   font-size: 12px;
   color: #958e8e;
 }
-
+/* TAGS */
 .container {
   position: absolute;
   top: 80px;
@@ -233,28 +232,64 @@ a {
   background-color: #3f3f3f;
   border-radius: 8px;
 }
-<<<<<<< HEAD
-=======
 
 /* VIDEO */
+.grid-container {
+  overflow: auto;
+  display: grid;
+  top: 160px;
+  left: 270px;
+  position: fixed;
+  grid-template-columns: auto auto auto auto;
+  gap: 0px;
+  height: calc(100% - 160px);
+}
+
 .video {
   display: flex;
-  position: fixed;
-  top: 160px;
-  left: 250px;
-  padding: 0 20px 0 20px;
+  flex-direction: column;
+  padding: 0px 7px 0px 0px;
 }
 
-.video .video-content {
+.video .thumbnail {
   width: 355px;
   height: 195px;
-  /* margin: 0 7px 0 7px; */
   padding: 6px 7px 6px 7px;
+  border-radius: 15px;
 }
 
-.video .avatar {
-  /* margin-right: 0; */
-
-  /* margin-left: 25px; */
+.detail {
+  display: flex;
 }
->>>>>>> 1a95ae7f20ad84c293666be5a9ccca16f8019883
+
+.detail .avatar {
+  margin-right: 0;
+  margin-left: 7px;
+}
+
+.detail .title {
+  /* overflow: hidden;
+  word-break: break-word;
+  text-overflow: ellipsis;
+   */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin: 7px 0px 0px 10px;
+  font-size: 17px;
+  width: 300px;
+  height: 40px;
+}
+
+.detail .info .youtuber {
+  margin: 7px 0px 0px 10px;
+  font-size: 14px;
+  color: #848484;
+}
+
+.detail .info .view {
+  margin: 4px 0px 0px 10px;
+  font-size: 14px;
+  color: #848484;
+}
